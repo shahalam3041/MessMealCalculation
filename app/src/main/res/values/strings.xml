@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mess Meal Calculation</string>
+    <string name="name">Name</string>
+    <string name="number_of_meal">Meal No</string>
+    <string name="rate">Rate</string>
+    <string name="Bua">Bua</string>
+    <string name="fuel">Fuel</string>
+    <string name="others">Others</string>
+    <string name="credit">Credit</string>
+    <string name="calculate">Calculate</string>
+    <string name="show_name">Name</string>
+    <string name="meal_cost">Meal Cost</string>
+    <string name="meal_bua">Meal + Bua</string>
+    <string name="meal_bua_fuel">Meal+Bua+Fuel</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="manager_pay">Manager will Pay</string>
+    <string name="border_pay">Border will Pay</string>
+</resources>
