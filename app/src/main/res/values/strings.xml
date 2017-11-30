@@ -2,10 +2,10 @@
     <string name="app_name">Mess Meal Calculation</string>
     <string name="name">Name</string>
     <string name="number_of_meal">Meal No</string>
-    <string name="rate">Rate</string>
-    <string name="Bua">Bua</string>
-    <string name="fuel">Fuel</string>
-    <string name="others">Others</string>
+    <string name="rate">Meal Rate</string>
+    <string name="Bua">Bua Bill</string>
+    <string name="fuel">Fuel Bill</string>
+    <string name="others">Others Fee</string>
     <string name="credit">Credit</string>
     <string name="calculate">Calculate</string>
     <string name="show_name">Name</string>

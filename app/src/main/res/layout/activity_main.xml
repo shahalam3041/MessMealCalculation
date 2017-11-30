@@ -8,9 +8,13 @@
     android:orientation="vertical"
     tools:context="com.example.shahalam.messmealcalculation.MainActivity">
 
+
+
    <LinearLayout
        android:orientation="horizontal"
-       android:weightSum="8"
+       android:weightSum="4"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
        android:layout_width="match_parent"
        android:layout_height="wrap_content">
        <TextView
@@ -20,6 +24,7 @@
            android:layout_height="wrap_content" />
 
        <EditText
+           android:id="@+id/rateETid"
            android:layout_width="0dp"
            android:layout_height="wrap_content"
            android:layout_weight="1"
@@ -32,40 +37,53 @@
            android:layout_height="wrap_content" />
 
        <EditText
+           android:id="@+id/buaETid"
            android:layout_width="0dp"
            android:layout_height="wrap_content"
            android:layout_weight="1"
            android:gravity="center"
            android:inputType="numberDecimal" />
-       <TextView
-           android:text="@string/fuel"
-           android:layout_weight="1"
-           android:layout_width="0dp"
-           android:layout_height="wrap_content" />
 
-       <EditText
-           android:layout_width="0dp"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:gravity="center"
-           android:inputType="numberDecimal" />
-       <TextView
-           android:text="@string/others"
-           android:layout_weight="1"
-           android:layout_width="0dp"
-           android:layout_height="wrap_content" />
-
-       <EditText
-           android:layout_width="0dp"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:gravity="center"
-           android:inputType="numberDecimal" />
    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/fuel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/fuelETid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:text="@string/others"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/othersETid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
 
 
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -76,6 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <EditText
+            android:id="@+id/nameETid"
             android:layout_weight="3"
             android:gravity="center"
             android:layout_width="0dp"
@@ -84,6 +103,8 @@
 
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -95,6 +116,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/mealNoETid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -103,6 +125,8 @@
     </LinearLayout>
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -114,6 +138,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/creditETid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -121,12 +146,18 @@
             android:inputType="numberDecimal" />
     </LinearLayout>
     <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/calculateBTid"
         android:text="@string/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dee7f4"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -137,6 +168,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/showNameTVid"
             android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -145,7 +177,10 @@
 
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
+        android:background="#c0d1ed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -155,6 +190,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/showMealCostTVid"
             android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -162,7 +198,10 @@
     </LinearLayout>
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
+        android:background="#edd0c0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -172,6 +211,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/showMealBuaTVid"
             android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -179,6 +219,9 @@
 
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#cdf4d0"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -189,12 +232,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/showMealBuaFuelTVid"
             android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginLeft="10dp"
+        android:background="#e8b2dd"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -205,12 +252,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/showTotalCostTVid"
             android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:weightSum="5"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#f7f9a7"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -221,18 +272,57 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/showCreditTVid"
             android:layout_weight="3"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <TextView
-        android:text="Manager/Border will pay"
-        android:gravity="center"
+    <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="#f99f9f"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/showWhoPayId"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+     <!--   <TextView
+            android:id="@+id/showBorderPayTVid"
+            android:text="@string/manager_pay"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" /> -->
+
+        <TextView
+            android:id="@+id/showPayAmountTVid"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@color/colorAccent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imoticonId"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
     <TextView
-        android:text="000.00"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="Shah Alam, CSE, HSTU" />
+
+
 </LinearLayout>
